@@ -1,0 +1,8 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - printf '[{"name":"search-service","imageUri":"480635166082.dkr.ecr.us-east-2.amazonaws.com/search-service:latest"}]' > imagedefinitions.json
+artifacts:
+  files: imagedefinitions.json
