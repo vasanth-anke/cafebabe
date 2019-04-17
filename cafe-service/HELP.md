@@ -9,8 +9,8 @@ The following guides illustrate how to use some features concretely:
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 
 #maven
-./mvnw install
 mkdir target/dependency
+./mvnw install
 (cd target/dependency; jar -xf ../*.jar)
 
 ##AWS monolith to microservices
@@ -61,7 +61,7 @@ aws ecr get-login --no-include-email --region [region]
 ###docker tag
 
 480635166082.dkr.ecr.us-east-2.amazonaws.com/cafe-service
-
+docker tag cafebabe/cafe-service:latest 480635166082.dkr.ecr.us-east-2.amazonaws.com/cafe-service:latest
 docker tag cafebabe/search-service:latest 480635166082.dkr.ecr.us-east-2.amazonaws.com/search-service:v1
 
 ### docker push
